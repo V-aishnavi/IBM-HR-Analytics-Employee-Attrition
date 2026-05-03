@@ -8,7 +8,6 @@ Employee attrition analysis using Python, ML, SQL &amp; Tableau
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-red?style=flat&logo=scikit-learn&logoColor=white)
 ![SHAP](https://img.shields.io/badge/SHAP-Explainability-green?style=flat)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat)
-![Internship](https://img.shields.io/badge/Internship-Project%207%20of%207-purple?style=flat)
 
 ---
 
