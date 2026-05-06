@@ -187,6 +187,21 @@ This project performs a **complete end-to-end analysis** of employee attrition u
 | Employee Risk Monitor | HR Managers | ML-powered risk scores per employee |
 
 ---
+### Dashboard Screenshots
+
+**Executive Overview**
+![Executive Overview](images/dashboard1.png)
+
+**Risk Factors Deep Dive**
+![Risk Factors](images/dashboard2.png)
+
+**Compensation Analysis**
+![Compensation](images/dashboard.png)
+
+**Employee Risk Monitor**
+![Risk Monitor](images/dashboard4.png)
+
+---
 
 ## 💡 Business Recommendations
 
