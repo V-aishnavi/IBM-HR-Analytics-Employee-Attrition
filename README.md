@@ -72,15 +72,25 @@ This project performs a **complete end-to-end analysis** of employee attrition u
 ### Model Visualizations
 
 **SHAP Feature Importance**
+
 ![SHAP Summary](images/shap_summary.png)
 
+---
+
 **Model Comparison**
+
 ![Model Comparison](images/model_comparison.png)
 
+---
+
 **Employee Risk Distribution**
+
 ![Risk Distribution](images/risk_distribution.png)
 
+---
+
 **Learning Curve**
+
 ![Learning Curve](images/learning_curve.png)
 
 --- 
