@@ -190,15 +190,25 @@ This project performs a **complete end-to-end analysis** of employee attrition u
 ### Dashboard Screenshots
 
 **Executive Overview**
+
 ![Executive Overview](images/dashboard1.png)
 
+---
+
 **Risk Factors Deep Dive**
+
 ![Risk Factors](images/dashboard2.png)
 
+---
+
 **Compensation Analysis**
-![Compensation](images/dashboard.png)
+
+![Compensation](images/dashboard3.png)
+
+---
 
 **Employee Risk Monitor**
+
 ![Risk Monitor](images/dashboard4.png)
 
 ---
