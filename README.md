@@ -68,6 +68,23 @@ This project performs a **complete end-to-end analysis** of employee attrition u
 | K‑Neighbors | ~69% | ~0.36 | ~0.63 | ✅ Stable |
 | Decision Tree | ~81% | ~0.31 | ~0.69 | ⚠️Variable |
 
+---
+### Model Visualizations
+
+**SHAP Feature Importance**
+![SHAP Summary](images/shap_summary.png)
+
+**Model Comparison**
+![Model Comparison](images/model_comparison.png)
+
+**Employee Risk Distribution**
+![Risk Distribution](images/risk_distribution.png)
+
+**Learning Curve**
+![Learning Curve](images/learning_curve.png)
+
+--- 
+
 ### Best Model — Random Forest (Tuned with GridSearchCV)
 
 | Metric | Score | Meaning |
