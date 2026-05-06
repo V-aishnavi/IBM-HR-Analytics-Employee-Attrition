@@ -1,5 +1,4 @@
-# IBM-HR-Analytics-Employee-Attrition
-Employee attrition analysis using Python, ML, SQL &amp; Tableau
+# 📊 IBM HR Analytics — Employee Attrition & Performance
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?style=flat&logo=jupyter&logoColor=white)
@@ -8,6 +7,7 @@ Employee attrition analysis using Python, ML, SQL &amp; Tableau
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-red?style=flat&logo=scikit-learn&logoColor=white)
 ![SHAP](https://img.shields.io/badge/SHAP-Explainability-green?style=flat)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat)
+![Internship](https://img.shields.io/badge/Internship-Project%207%20of%207-purple?style=flat)
 
 ---
 
@@ -30,16 +30,14 @@ This project performs a **complete end-to-end analysis** of employee attrition u
 
 | Property | Value |
 |----------|-------|
-| Source | IBM HR Analytics (Kaggle) |
-| Created By | IBM Data Scientists (fictional dataset) |
+| Source | IBM HR Analytics) |
+| Created By | IBM Data Scientists |
 | Rows | 1,470 employees |
 | Columns | 35 features |
 | Target Variable | Attrition (Yes = Left, No = Stayed) |
 | Missing Values | ✅ None |
 | Duplicate Rows | ✅ None |
 | Class Balance | 83.9% Stayed / 16.1% Left |
-
-📥 [Download Dataset from Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
 
 ---
 
@@ -62,24 +60,23 @@ This project performs a **complete end-to-end analysis** of employee attrition u
 
 ### Model Comparison
 
-| Model | Accuracy | F1 Score | ROC-AUC | CV Stable |
-|-------|----------|----------|---------|-----------|
-| **Random Forest ⭐** | ~92% | ~0.92 | ~0.97 | ✅ Yes |
-| Logistic Regression | ~91% | ~0.90 | ~0.96 | ✅ Yes |
-| SVM | ~88% | ~0.87 | ~0.97 | ✅ Yes |
-| K-Neighbors | ~88% | ~0.89 | ~0.95 | ⚠️ Variable |
-| Decision Tree | ~84% | ~0.85 | ~0.82 | ⚠️ Variable |
+| Model | Accuracy | F1 Score | ROC‑AUC | CV Stability* |
+|-------|----------|----------|---------|---------------|
+| Random Forest (untuned) | ~83% | ~0.31 | ~0.79 | ⚠️Variable |
+| Logistic Regression | ~85% | ~0.48 | ~0.82 |  ⚠️Variable |
+| SVM (untuned) | ~85% | ~0.42 | ~0.76 | ⚠️Variable |
+| K‑Neighbors | ~69% | ~0.36 | ~0.63 | ✅ Stable |
+| Decision Tree | ~81% | ~0.31 | ~0.69 | ⚠️Variable |
 
 ### Best Model — Random Forest (Tuned with GridSearchCV)
 
-| Metric | Score | Business Meaning |
-|--------|-------|-----------------|
-| Accuracy | ~92% | Correctly classifies 92% of all employees |
-| Precision | ~93% | When flagged as leaving — right 93% of time |
-| Recall | ~91% | Catches 91% of all employees who will leave |
-| F1 Score | ~0.92 | Strong precision-recall balance |
-| ROC-AUC | ~0.97 | Near-perfect class separation |
-| AP Score | >0.80 | Strong performance on imbalanced data |
+| Metric | Score | Meaning |
+|--------|-------|---------|
+| Accuracy | ~83.7% | Correctly predicts 83.7% of cases |
+| Precision | ~47.8% | When model says "will leave", right 47.8% of time |
+| Recall | ~23.4% | Catches 23.4% of all actual leavers |
+| F1 Score | ~31.4% | Strong balance of precision and recall |
+| ROC‑AUC | ~79% | Excellent class separation |
 
 ### Advanced Analysis Performed
 
@@ -180,7 +177,7 @@ This project performs a **complete end-to-end analysis** of employee attrition u
 
 ## 📊 Tableau Dashboards
 
-🔗 **Live Dashboard:** [Add your Tableau Public link here]
+🔗 **Live Dashboard:** [https://public.tableau.com/views/IBM-HR-Analytics_17780652011810/IncomebyEducation?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]
 
 | Dashboard | Target Audience | Key Visual |
 |-----------|----------------|-----------|
@@ -261,24 +258,6 @@ This project performs a **complete end-to-end analysis** of employee attrition u
 | Tableau Public | Latest | Interactive dashboards |
 
 ---
-
-## ⚙️ How to Run This Project
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/IBM-HR-Analytics-Employee-Attrition.git
-cd IBM-HR-Analytics-Employee-Attrition
-
-# 2. Install required packages
-pip install -r requirements.txt
-
-# 3. Download dataset from Kaggle
-# https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
-# Place WA_Fn-UseC_-HR-Employee-Attrition.csv in the root folder
-
-# 4. Run the notebook
-jupyter notebook notebooks/IBM_HR_Analytics_FINAL.ipynb
-```
 **Key data leakage prevention:**
 - Train-test split happens **before** SMOTE — test set has no synthetic samples
 - StandardScaler is **fit on training data only** — test statistics never seen during training
